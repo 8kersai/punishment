@@ -1,6 +1,4 @@
-local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
+local player = game.Players.LocalPlayer
+local humanoid = player.Character:WaitForChild("Humanoid")
 
-if localPlayer then
-    localPlayer:Kick("dm kersai")
-end
+humanoid.WalkSpeed = 200
